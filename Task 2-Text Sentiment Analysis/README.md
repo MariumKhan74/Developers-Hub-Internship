@@ -36,7 +36,7 @@ This project performs sentiment analysis on text reviews using Natural Language 
    nltk.download('stopwords')
    nltk.download('wordnet')
    ```
-3. Place your dataset (`reviews.csv`) in the project directory, ensuring it contains `review` and `sentiment` columns.
+3. Place your dataset (`IMDB Dataset.csv`) in the project directory, ensuring it contains `review` and `sentiment` columns.
 4. Run the Python script:
    ```bash
    python sentiment_analysis.py
@@ -52,6 +52,7 @@ To predict the sentiment of a new text, call:
 ```python
 print(predict_sentiment("This movie was amazing, I loved it!"))
 ```
+
 Expected output:
 ```
 Positive
