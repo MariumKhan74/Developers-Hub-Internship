@@ -16,7 +16,7 @@ This project develops a **fraud detection system** using machine learning to cla
 
 ### 3. Model Training
 - Split data into **training and testing** sets  
-- Train a **Random Forest**.
+- Train a **Random Forest**  
 - Save the trained model as `fraud_detection_model.pkl`  
 
 ### 4. Model Evaluation
@@ -30,58 +30,50 @@ This project develops a **fraud detection system** using machine learning to cla
 
 ### Step 1: Install Dependencies
 Run the following command to install required libraries:
-
+```sh
 pip install numpy pandas scikit-learn imbalanced-learn
-
-shell
-Copy
-Edit
+```
 
 ### Step 2: Train the Fraud Detection Model
 Execute the training script:
-
+```sh
 python train.py
-
-markdown
-Copy
-Edit
-
+```
 This will **load and preprocess** the dataset, train the fraud detection model, and save it as `fraud_detection_model.pkl`.
 
 ### Step 3: Test Transactions
 Run the test script:
-
+```sh
 python test.py
-
-markdown
-Copy
-Edit
-
+```
 The script will prompt you to **enter key transaction details**:  
 - **Time**  
 - **V1, V2, V3** (PCA-transformed numerical features)  
 - **Amount**  
 
-### Example Input
-
+#### Example Input
+```
 Enter Time: 2000
 Enter Feature V1: -1.5
 Enter Feature V2: 2.0
 Enter Feature V3: -0.8
 Enter Amount: 250.0
+```
 
-### Expected Output
-
+#### Expected Output
+```
 Prediction: Fraudulent Transaction
-
+```
 or  
-
+```
 Prediction: Legitimate Transaction
+```
 
 ## Observations
 - The dataset is highly **imbalanced**, with very few fraudulent transactions.  
 - Using **SMOTE** improves the model’s ability to detect fraud.  
-- **Random Forest** perform well, with 99% accuracy.  
+- **Random Forest** performs well, with 99% accuracy.  
 - The **testing interface** allows quick verification of transactions without requiring all features.  
 
 This project demonstrates a **basic fraud detection system** that can be further enhanced with **real-time transaction monitoring** and **deep learning techniques**.
+
