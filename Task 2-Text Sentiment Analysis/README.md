@@ -1,4 +1,4 @@
-# Sentiment Analysis Project
+# Text Sentiment Analysis
 
 ## Project Overview
 This project performs sentiment analysis on text reviews using Natural Language Processing (NLP) and Machine Learning. The dataset consists of reviews labeled as positive or negative. The model is trained to classify sentiment using Logistic Regression.
