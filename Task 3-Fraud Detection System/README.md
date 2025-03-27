@@ -70,25 +70,13 @@ Enter Feature V2: 2.0
 Enter Feature V3: -0.8
 Enter Amount: 250.0
 
-shell
-Copy
-Edit
-
 ### Expected Output
 
 Prediction: Fraudulent Transaction
 
-nginx
-Copy
-Edit
-
 or  
 
 Prediction: Legitimate Transaction
-
-pgsql
-Copy
-Edit
 
 ## Observations
 - The dataset is highly **imbalanced**, with very few fraudulent transactions.  
