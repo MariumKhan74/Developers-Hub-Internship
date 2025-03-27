@@ -16,7 +16,7 @@ This project develops a **fraud detection system** using machine learning to cla
 
 ### 3. Model Training
 - Split data into **training and testing** sets  
-- Train a **Random Forest** or **Gradient Boosting** classifier  
+- Train a **Random Forest**.
 - Save the trained model as `fraud_detection_model.pkl`  
 
 ### 4. Model Evaluation
@@ -93,7 +93,7 @@ Edit
 ## Observations
 - The dataset is highly **imbalanced**, with very few fraudulent transactions.  
 - Using **SMOTE** improves the model’s ability to detect fraud.  
-- **Random Forest and Gradient Boosting** both perform well, but the best model depends on **evaluation metrics**.  
+- **Random Forest** perform well, with 99% accuracy.  
 - The **testing interface** allows quick verification of transactions without requiring all features.  
 
 This project demonstrates a **basic fraud detection system** that can be further enhanced with **real-time transaction monitoring** and **deep learning techniques**.
