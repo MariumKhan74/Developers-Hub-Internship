@@ -1,88 +1,94 @@
 Credit Card Fraud Detection System
 Project Overview
-This project develops a fraud detection system using the Credit Card Fraud Dataset. The system:
-✔️ Trains a machine learning model to detect fraudulent transactions
-✔️ Uses data preprocessing techniques to handle class imbalance
-✔️ Evaluates model performance using precision, recall, and F1-score
-✔️ Provides a simple command-line interface to test transactions
+This project develops a fraud detection system using machine learning to classify transactions as legitimate or fraudulent. The dataset used is the Credit Card Fraud Detection Dataset. The model is trained using Random Forest or Gradient Boosting to improve detection accuracy.
 
-Dataset
-Source: Credit Card Fraud Detection Dataset
-
-Features:
-
-Time: Time elapsed since the first transaction
-
-V1 to V28: PCA-transformed numerical features
-
-Amount: Transaction amount
-
-Class: 0 (Legitimate) / 1 (Fraudulent)
-
-Project Steps
-1️ Data Preprocessing
-
-Load dataset and explore class imbalance
+Steps
+1. Data Preprocessing
+Load the dataset and explore class imbalance
 
 Handle imbalance using SMOTE (Synthetic Minority Over-sampling Technique)
 
 Normalize the Amount feature
 
-2️⃣ Model Training
+2. Feature Engineering
+Select relevant numerical features for training
 
-Train Random Forest or Gradient Boosting model
+Standardize transaction amounts
+
+3. Model Training
+Split data into training and testing sets
+
+Train a Random Forest or Gradient Boosting classifier
 
 Save the trained model as fraud_detection_model.pkl
 
-3️⃣ Model Evaluation
+4. Model Evaluation
+Evaluate the model using accuracy, precision, recall, and F1-score
 
-Compute Precision, Recall, F1-score
+5. Fraud Detection Interface
+Implement a command-line interface to test transactions
 
-4️⃣ Testing Interface
+Allow users to input transaction details and receive a prediction
 
-Create a simple command-line interface (test.py)
-
-Allow users to enter transaction details
-
-Predict whether a transaction is fraudulent or legitimate
-
-How to Run the Project
-🔹 1. Install Dependencies
+How to Run the Scripts
+Step 1: Install Dependencies
 Run the following command to install required libraries:
 
-bash
+nginx
 Copy
 Edit
 pip install numpy pandas scikit-learn imbalanced-learn
-🔹 2. Train the Model
-Run the training script:
+Step 2: Train the Fraud Detection Model
+Execute the training script:
 
-bash
+nginx
 Copy
 Edit
 python train.py
-This will:
-✔️ Load and preprocess the dataset
-✔️ Train the fraud detection model
-✔️ Save the trained model (fraud_detection_model.pkl)
+This will load and preprocess the dataset, train the fraud detection model, and save it as fraud_detection_model.pkl.
 
-3. Test Transactions
+Step 3: Test Transactions
 Run the test script:
 
-bash
+nginx
 Copy
 Edit
 python test.py
-The script will ask for 4 key inputs:
+The script will prompt you to enter key transaction details:
 
 Time
 
-V1, V2, V3 (PCA
+V1, V2, V3 (PCA-transformed numerical features)
 
+Amount
 
+Example Input
+yaml
+Copy
+Edit
+Enter Time: 2000  
+Enter Feature V1: -1.5  
+Enter Feature V2: 2.0  
+Enter Feature V3: -0.8  
+Enter Amount: 250.0  
+Expected Output
+makefile
+Copy
+Edit
+Prediction: Fraudulent Transaction
+or
 
+makefile
+Copy
+Edit
+Prediction: Legitimate Transaction
+Observations
+The dataset is highly imbalanced, with very few fraudulent transactions.
 
+Using SMOTE improves the model’s ability to detect fraud.
 
+Random Forest and Gradient Boosting both perform well, but the best model depends on evaluation metrics.
 
+The testing interface allows quick verification of transactions without requiring all features.
 
-
+This project demonstrates a basic fraud detection system that can be further enhanced with real-time transaction monitoring and deep learning techniques.
