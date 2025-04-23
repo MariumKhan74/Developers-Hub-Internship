@@ -1,4 +1,4 @@
-# Diabetes Prediction and Risk Mitigation Using PIMA Indians Diabetes Dataset
+# Insights Of PIMA Indians Diabetes Dataset
 
 ## 🩺 Actionable Insights for Healthcare Professionals
 
