@@ -59,11 +59,6 @@ Based on the model’s interpretation using SHAP, the following actionable insig
 
 By focusing on the most influential features—**job satisfaction**, **commute distance**, and **work-life balance**—companies can take proactive steps to reduce employee attrition. These insights can be used to design targeted interventions that improve employee retention and overall satisfaction.
 
-## Future Work
-
-- Experiment with other machine learning models (e.g., Gradient Boosting, XGBoost) to compare performance.
-- Further analysis could be conducted to examine the effects of **EmployeeCount**, **EducationField**, and **PerformanceRating** on attrition.
-
 ## Technologies Used
 
 - **Python**: For data analysis and machine learning.
@@ -71,8 +66,3 @@ By focusing on the most influential features—**job satisfaction**, **commute d
 - **scikit-learn**: For building the Random Forest model.
 - **SHAP**: For model interpretability.
 - **Matplotlib / Seaborn**: For data visualization.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
