@@ -23,4 +23,16 @@ The model performance was evaluated using the following classification metrics:
 
 ### Classification Report:
 The classification report provides detailed metrics for both the positive (loan default) and negative (no default) classes.
+Accuracy: 0.9825
+              precision    recall  f1-score   support
+
+           1       0.98      1.00      0.99      1858
+           2       1.00      1.00      1.00       104
+           3       0.00      0.00      0.00        18
+           4       0.00      0.00      0.00         9
+           5       0.80      0.36      0.50        11
+
+    accuracy                           0.98      2000
+   macro avg       0.56      0.47      0.50      2000
+weighted avg       0.97      0.98      0.98      2000
 
